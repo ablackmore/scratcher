@@ -11,3 +11,4 @@ The current game has 9 tiles, 4 prizes, 3 attempts and 3 matches. In order to wi
 Each of these fields needs to be changed so that it will be user defined and not static. 
 A user should be able to create a version that only has 1 tile, 1 prize, 1 attempt and 1 match or as many of each of those fields as they would like. 
 The trick here is that some logic will need to be implemented so that the user cannot create a game that is unwinnable (ex. 6 tiles, 1 prize, 2 attempts, 3 matches would be unwinnable because you only get 2 scratches but have to match 3 tiles).
+The different versions of the game should provide a unique URL to reach the game and be displayed in the management portion where the user manages their different versions of the game.
