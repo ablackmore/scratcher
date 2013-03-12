@@ -1,0 +1,166 @@
+
+/* Left & Right alignment */
+
+.left { float:left;}
+.right { float:right;}
+.center{ text-align:center}
+.wrapper {width:100%; overflow:hidden;}
+.relative{ position:relative;}
+
+/* Global properties ======================================================== */
+
+body{ 
+	background: url(../images/bg.gif) 0 0 repeat #272727;
+	border:0; 
+	font:14px 'Junge', serif; 
+	color:#fff; 
+	line-height:24px; 
+	min-width:750px; 
+	overflow:visible;
+	padding-left: 10px;
+}
+
+.css3{border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; box-shadow: 0 0 4px rgba(0, 0, 0, .4); -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .4); -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .4); position: relative;}
+
+.page_spinner{ position:absolute;background: url(../images/bg.gif) 0 0 repeat #272727; z-index:99; width:100%; height:100%; top:0; left:0}
+.page_spinner div{ position:absolute;background: url(../images/ajax-loader.gif) 50% 50% no-repeat;width:100%; height:100%; top:0; left:0}
+
+
+/* Global Structure ============================================================= */
+
+.main {	margin: 0 auto;	width:750px; }
+
+.over{ position:absolute; overflow:hidden; padding-top:0px; padding-bottom:54px; }
+
+.pattern1, .pattern2{ background:url(../images/pattern1.png) center 0 no-repeat; position:relative; height:23px; line-height:0;}
+.pattern1 img, .pattern2 img{ width:50%; height:1px; top:11px; position:absolute;}
+.pattern1 .left, .pattern2 .left{ left:0}
+.pattern1 .right, .pattern2 .right{ right:0}
+.pattern2{ background-image:url(../images/pattern2.png)}
+
+/* ============================= main layout ====================== */
+
+a{ color:#fff; text-decoration: none; outline:none}
+a:hover{}
+h1{ padding:10px 0 0 0; text-align:center}
+h2{ font-size:28px; line-height:1.2em; text-transform:uppercase; padding:5px 0 25px 0; text-align:center; font-weight:normal}
+h2#welcome{ font-size:36px; line-height:1.2em; text-transform:uppercase; padding:1px 0 18px 0; text-align:center; letter-spacing:-1px; font-weight:normal}
+h2.left{ float: none; text-align:left}
+h3{ font-size:23px; color:#fff; line-height:1.2em; padding:2px 0 16px 0; text-align:center; font-weight:normal}
+p{ padding-bottom:24px;}
+
+/* ============================= header ====================== */
+header{}
+
+#logo{ display: inline-block; text-indent:-9999px; background:url(../images/logo.png) 0 0 no-repeat; width:178px; height:95px;}
+
+/* ============================= content ====================== */
+
+#content{ height:737px; position:relative; margin-top:-5px; z-index:3}
+#content > ul{ position:relative; width:628px; height:596px; background:url(../images/bg_box1.png) repeat; top:54px; left:61px;box-shadow: 0 0 5px rgba(0, 0, 0, .24); -moz-box-shadow: 0 0 5px rgba(0, 0, 0, .24); -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .24);}
+#content > ul > li{ position:relative;}
+#content > ul > li > div{ width:596px; height:564px; background:url(../images/bg_cont.gif) repeat; position:relative; top:16px; left:16px;}
+#content > ul > li > div > img{ left:-16px; top:-16px; border:16px solid #fff; position: absolute}
+
+
+#content > img{ position:absolute;}
+.top_left{ top:0; left:0}
+.top_right{ top:0; right:0}
+.bot_left{ bottom:0; left:0}
+.bot_right{ bottom:0; right:0}
+.box{ position: absolute; top:32px; left:40px; bottom:36px; right:40px; background:url(../images/bg_box1.png) repeat}
+
+.link1{ position:relative;}
+.link1 span{ position:absolute; left:0; width:0; height:1px; bottom:0;}
+
+.splash{ position:absolute; top:54px; left:61px;}
+.splash li{ float:left; margin-right:11px; margin-bottom:10px;}
+.splash li > span{ position:relative; border:16px solid #fff; overflow:hidden; display:block}
+.splash a{ position: absolute; width:100%; height:100%; top:0; left:0; background:url(../images/spacer.gif) repeat}
+.splash strong span{ margin-top:-16px; display:block}
+.splash strong{ font-weight: normal;width:170px; top:56px; left:43px; height:106px; background:url(../images/nav_active.png) 0 0 no-repeat; position:absolute; font-size:28px; text-align:center; text-transform:uppercase; line-height:52px; padding-top:64px; letter-spacing:-1px;}
+
+.font1{ font-size:16px;}
+
+.pad_bot1{ padding-bottom:13px;}
+.marg_right1{ margin-right:22px;}
+
+.underline{ background:url(../images/underline.png) center bottom no-repeat; padding-bottom:28px; margin-bottom:22px}
+
+.button1{ display:inline-block; background:#fff; font-size:20px; color:#1d1d1d; line-height:40px; padding: 0 20px;}
+
+/* ============================= footer ====================== */
+
+footer { height:45px; margin-top:-13px; font-size:15px; color:#676767; text-transform:uppercase; text-align:center; position:relative; z-index:4}
+footer a{ color:#676767}
+footer a:hover{}
+
+/* ============================= forms ============================= */
+
+#ContactForm{ padding-top:0px; position:relative; padding-bottom:10px}
+#ContactForm .col1{ width:250px; float:left;}
+#ContactForm .pad_left1{ padding-left:20px}
+#ContactForm .wrapper{ overflow:inherit; min-height:46px; }
+#ContactForm .success{ display:none; position:absolute; bottom:0; left:0; font-size:12px; line-height:16px;}
+#ContactForm label{ position:relative;min-height:22px; display: inline-block; padding-top: 15px;}
+#ContactForm .message{ min-height:135px;}
+#ContactForm  span{ display:block}
+#ContactForm .error, #ContactForm .empty{ font-size:10px; color:#fff; line-height:14px; display:none; width:100%}
+#ContactForm a{ margin-left:7px; float:right;}
+#ContactForm .input { margin:0;width:220px; height:24px; background: url(../images/bg_form.png) repeat; border:1px solid #b2b2b2; padding:8px 10px;color:#fff; font:16px 'Junge', serif;}
+#ContactForm select { margin:0;width:242px; height:35px; background: url(../images/bg_form.png) repeat; border:1px solid #b2b2b2; padding:1px 1px;color:#fff; font:14px 'Junge', serif;}
+#ContactForm  .bg{display:inline-block;}
+
+#optin, #landscape {
+	background: url(../images/bg.gif) 0 0 repeat #272727;
+	border: 4px white solid; 
+	font:14px 'Junge', serif; 
+	color:#fff; 
+	line-height:24px;  
+	overflow:visible;
+	padding: 30px;
+	
+	display: none;
+	position: absolute;
+	top: 207px;
+	left: 71px;
+	width: 560px;
+	height: 558px;
+	z-index: 200;
+	text-align: center;
+}
+
+#game_end {
+	display:none;
+	position:absolute;
+	top:207px;
+	left:71px;
+	width:628px;
+	height:626px;
+	z-index:199;	
+}
+
+.optin_box {
+	display: none;
+	padding-bottom: 20px;
+}
+
+#ContactForm {
+	position: absolute;
+	top: 350px;
+	left: 35px;
+	padding: 0 20px 20px 20px;
+	width: 505px;
+	height: 230px;
+	background-color: #000000;
+	border: 4px solid #fbaa2d;
+	-webkit-border-radius: 10px;	
+}
+
+#prize_img {
+	position: relative;
+	top: 160px;
+	width:120px;
+	height:120px;
+	border:4px dotted #fbaa2d;		
+}
